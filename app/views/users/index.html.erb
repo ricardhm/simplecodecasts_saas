@@ -1,1 +1,14 @@
-List of all users
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <ul class="list-unstyled">
+            <% @users.each do |user| %>
+                <% if user.profile %>
+                    <li>
+                        <%= user.profile %></br>
+                        <% end %>
+                    </li>
+            <% end %>
+        </ul>
+    </div>
+</div>
+        
